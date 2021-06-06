@@ -2,8 +2,8 @@
 
 After cloning and running the docker container for the contacts-management-api repo, please run these following commands:
 
-### `docker build -t sample:dev .`
+### `docker build -t partners-management:front .`
 
 Then
 
-### `docker run -d --rm -v ${PWD}:/app -v app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true sample:dev`
+### `docker run -d -p 3001:3000 partners-management:front`

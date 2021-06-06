@@ -30,7 +30,12 @@ const ListView: React.FC = () => {
       {error && <div>Error</div>}
       <Grid container spacing={4}>
         {partners.map((partner: IPartnerInfo) => {
-          return <PartnerInfo partnerDetails={partner}></PartnerInfo>;
+          return (
+            <PartnerInfo
+              key={Math.random()}
+              partnerDetails={partner}
+            ></PartnerInfo>
+          );
         })}
       </Grid>
     </Fragment>

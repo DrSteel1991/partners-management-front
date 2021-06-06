@@ -32,9 +32,8 @@ interface Props {
 
 const PartnerInfo: React.FC<Props> = ({ partnerDetails }) => {
   const classes = useStyles();
-  console.log(partnerDetails);
   return (
-    <Grid key={Math.random()} item xs={12} sm={6} md={4}>
+    <Grid item xs={12} sm={6} md={4}>
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
